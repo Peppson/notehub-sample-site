@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/svg/logo.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/script.js"></script>
+    <title>Note Hub</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-align shadow">
+
+        <!-- Desktop -->
+        <div class="header-desktop">
+            <a class="logo-transition" href="index.html">
+                <div class="header-align header-padding text-no-wrap">
+                    <img id="Logo-desktop" src="images/svg/logo.svg" alt="Logo" class="logo">
+                    <h2>Note Hub</h2>
+                </div>
+            </a>
+            <nav class="text-no-wrap">
+                <ul>
+                    <li class="text-underline"><a href="index.html">Home</a></li>
+                    <li><a href="pages/courses.html">Courses</a></li>
+                    <li><a href="pages/sign-up.html">Sign up</a></li>
+                </ul>
+            </nav>
+            <ul class="header-padding header-icons">
+                <li><img src="images/svg/header_search.svg" alt="Search"></li>
+                <li><img src="images/svg/header_user.svg" alt="User"></li>
+                <li><img src="images/svg/header_cart.svg" alt="Cart"></li>
+            </ul>
+        </div>
+
+        <!-- Mobile -->
+        <div class="header-mobile">
+            <a class="logo-transition" href="index.html">
+                <div class="header-mobile-size">
+                    <img id="logo-mobile" src="images/svg/logo.svg" alt="Logo" class="logo">
+                </div>
+            </a>
+            <h2 class="text-no-wrap header-mobile-size">Note Hub</h2>
+            <div class="header-mobile-size">
+                <img id="menu-button" src="images/svg/menu_toggle.svg" alt="menu" onclick="toggleDropdown()">
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown menu -->
+    <nav id="dropdown-menu" class="dropdown-menu-wrapper hidden">
+        <div class="dropdown-menu font-large">
+            <a href="index.html" class="text-underline">Home</a>
+            <a href="pages/courses.html">Courses</a>
+            <a href="pages/sign-up.html">Sign up</a>
+            <a href="">Search</a>
+            <a href="">My Account</a>
+            <a href="">My Cart</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Band image -->
+        <section id="home-page" class="flex-column-end">
+            <div id="band-image-div">
+                <h2 class="text-center h2-padding">Learn Music From The Best!</h2>
+                <p class="text-center paragraph-padding">With Over 9,000 Talented Instructors, You're In Great Hands</p>
+                <br>
+                <figure>
+                    <img src="images/band.png" alt="Band playing">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sample courses -->
+        <section class="courses-container shadow">
+            <h2 class="text-center">This Week's Featured Courses</h2>
+            <div class="container">
+
+                <!-- Drum -->
+                <div class="box shadow">
+                    <figure class="align-left">
+                        <img src="images/svg/drum.svg" alt="Drum" class="homepage-icons">
+                    </figure>
+                    <div class="box-text">
+                        <p class="font-medium text-bold">Drum Fills With Rick Astley</p>
+                        <p class="font-small">Master the art of making a memorable drum-intro by diving deep with
+                            hands-on practice.</p>
+                    </div>
+                </div>
+
+                <!-- Piano -->
+                <div class="box shadow">
+                    <figure class="align-left">
+                        <img src="images/svg/piano.svg" alt="Piano" class="homepage-icons">
+                    </figure>
+                    <div class="box-text">
+                        <p class="font-medium text-bold">Piano! With Yuja</p>
+                        <p class="font-small">New to the piano? Yuja makes the learning process both easy and fun.</p>
+                    </div>
+                </div>
+
+                <!-- Music Theory -->
+                <div class="box shadow">
+                    <figure class="align-left">
+                        <img src="images/svg/note.svg" alt="Note" class="homepage-icons">
+                    </figure>
+                    <div class="box-text">
+                        <p class="font-medium text-bold">Basic Music Theory</p>
+                        <p class="font-small">Understand notes, scales, and chords easily.</p>
+                    </div>
+                </div>
+
+                <!-- Laptop -->
+                <div class="box shadow">
+                    <figure class="align-left">
+                        <img src="images/svg/laptop.svg" alt="Laptop" class="homepage-icons">
+                    </figure>
+                    <div class="box-text">
+                        <p class="font-medium text-bold">Digital Domain With Mike</p>
+                        <p class="font-small">Learn which DAW (Digital Audio Workstation) is best suited for you, and
+                            why it matters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="header-align">
+        <div class="footer-align">
+            <ul>
+                <li><img class="footer-icons" src="images/svg/footer_facebook.svg" alt="Facebook"></li>
+                <li><img class="footer-icons" src="images/svg/footer_instagram.svg" alt="Instagram"></li>
+                <li><img class="footer-icons" src="images/svg/footer_github.svg" alt="Github"></li>
+                <li><img class="footer-icons" src="images/svg/footer_linkedin.svg" alt="LinkedIn"></li>
+            </ul>
+            <h4 class="text-center">© 2024 Note Hub</h4>
+        </div>
+    </footer>
+</body>
+</html>

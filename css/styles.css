@@ -1,0 +1,256 @@
+
+:root {
+    /* ----- Colors ----- */
+    --white: #ffffff;
+    --lightgrey: #e5e4eb;
+    --darkgrey: #868686;
+    --table-color: #f2f2f2;
+
+    /* ----- Sizes ----- */
+    --border-radius: 10px;
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: 19px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    justify-content: center;
+    background: var(--white);
+}
+
+header, footer {
+    display: flex;
+    margin-top: 1px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+header {
+    height: 96px;
+}
+
+footer {
+    flex-direction: column;
+    background-color: var(--lightgrey);
+    padding: 8px;
+}
+
+footer h4 {
+    padding-top: 6px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+figure {
+    display: flex;
+}
+
+figure img {
+    width: 80vw;
+    max-width: 700px;
+}
+
+.debug {
+    background-color: rgb(212, 129, 28);
+}
+
+.logo {
+    width: 50px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-align a,
+.header-align a:visited,
+.dropdown-menu a,
+.dropdown-menu a:visited {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.header-align a:hover,
+.header-align li:hover,
+.header-align li:hover svg path {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+.logo-transition:hover {
+    transform: scale(1.02) !important;
+}
+
+.header-align {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.header-padding {
+    width: 160px;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.header-menu-button {
+    width: 36px;
+}
+
+.footer-icons {
+    width: 30px;
+}
+
+.footer-align {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    transition: transform 0.3s ease;
+}
+
+.h2-padding,
+.paragraph-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.align-left {
+    float: left;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 8px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-no-wrap {
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+    text-underline-offset: 6px;
+}
+
+.font-small {
+    font-size: var(--font-small);
+}
+
+.font-medium {
+    font-size: var(--font-medium);
+}
+
+.font-large {
+    font-size: var(--font-large);
+}
+
+.flex-column-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-desktop, .header-mobile {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-desktop {
+    display: flex;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.header-mobile-size {
+    display: flex;
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+}
+
+.dropdown-menu-wrapper {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    border-color: var(--darkgrey);
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    width: 100%;
+    height: 220px;
+    padding: 18px;
+    z-index: 999;
+    background-color: var(--white)
+}
+
+.background-image {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu-button {
+    justify-self: flex-end;
+    padding-left: 30px;
+    width: 36px;
+}
+
+/* Toggle desktop/mobile header based on screen width */
+@media screen and (max-width: 740px) {
+    header {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .header-desktop {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+    }
+}

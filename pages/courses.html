@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/svg/logo.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/courses.css">
+    <script src="../scripts/script.js"></script>
+    <title>Note Hub</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-align shadow">
+
+        <!-- Desktop -->
+        <div class="header-desktop">
+            <a class="logo-transition" href="../index.html">
+                <div class="header-align header-padding text-no-wrap">
+                    <img id="Logo-desktop" src="../images/svg/logo.svg" alt="Logo" class="logo">
+                    <h2>Note Hub</h2>
+                </div>
+            </a>
+            <nav class="text-no-wrap">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="text-underline"><a href="../pages/courses.html">Courses</a></li>
+                    <li><a href="../pages/sign-up.html">Sign up</a></li>
+                </ul>
+            </nav>
+            <ul class="header-padding header-icons">
+                <li><img src="../images/svg/header_search.svg" alt="Search"></li>
+                <li><img src="../images/svg/header_user.svg" alt="User"></li>
+                <li><img src="../images/svg/header_cart.svg" alt="Cart"></li>
+            </ul>
+        </div>
+
+        <!-- Mobile -->
+        <div class="header-mobile">
+            <a class="logo-transition" href="../index.html">
+                <div class="header-mobile-size">
+                    <img id="logo-mobile" src="../images/svg/logo.svg" alt="Logo" class="logo">
+                </div>
+            </a>
+            <h2 class="text-no-wrap header-mobile-size">Note Hub</h2>
+            <div class="header-mobile-size">
+                <img id="menu-button" src="../images/svg/menu_toggle.svg" alt="menu" onclick="toggleDropdown()">
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown menu -->
+    <nav id="dropdown-menu" class="dropdown-menu-wrapper hidden">
+        <div class="dropdown-menu font-large">
+            <a href="../index.html">Home</a>
+            <a href="../pages/courses.html" class="text-underline">Courses</a>
+            <a href="../pages/sign-up.html">Sign up</a>
+            <a href="">Search</a>
+            <a href="">My Account</a>
+            <a href="">My Cart</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="course-page">
+            <div>
+                <h2 class="text-center h2-padding">Available Courses</h2>
+                <p class="text-center paragraph-padding">
+                    All courses start at 9 AM at various <span class="text-no-wrap">Note Hub™</span> locations.
+                </p>
+                <br>
+            </div>
+            <div id="course-content">
+                <div class="guitar-image"></div>
+
+                <!-- Table -->
+                <div class="course-table-wrapper background-image">
+                    <table class="course-table">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Instructor</th>
+                                <th>Location</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="box highlighted">
+                                <td>Drum Fills</td>
+                                <td>Rick Astley</td>
+                                <td>Copenhagen</td>
+                                <td>04/11/2024 <strong>Soon!</strong></td>
+                            </tr>
+                            <tr class="box">
+                                <td>Piano!</td>
+                                <td>Yuja Wang</td>
+                                <td>New York</td>
+                                <td>12/11/2024</td>
+                            </tr>
+                            <tr class="box">
+                                <td>Digital Domain</td>
+                                <td>Mike Wall</td>
+                                <td>Stockholm</td>
+                                <td>30/11/2024</td>
+                            </tr>
+                            <tr class="box">
+                                <td>Expert Guitar</td>
+                                <td>Tosin Abasi</td>
+                                <td>TBA</td>
+                                <td>24/12/2024</td>
+                            </tr>
+                            <tr class="box">
+                                <td>Vocal Warmups</td>
+                                <td>Joel Holm</td>
+                                <td>Antarctica</td>
+                                <td>12/02/2028</td>
+                            </tr>
+                            <tr class="box">
+                                <td>Flute Madness</td>
+                                <td>Joakim Bjers</td>
+                                <td>Online</td>
+                                <td>Every Monday</td>
+                            </tr>
+                            <tr class="box">
+                                <td>Music Theory</td>
+                                <td>Sofia Bard</td>
+                                <td>Online</td>
+                                <td>Every Monday</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="header-align">
+        <div class="footer-align">
+            <ul>
+                <li><img class="footer-icons" src="../images/svg/footer_facebook.svg" alt="Facebook"></li>
+                <li><img class="footer-icons" src="../images/svg/footer_instagram.svg" alt="Instagram"></li>
+                <li><img class="footer-icons" src="../images/svg/footer_github.svg" alt="Github"></li>
+                <li><img class="footer-icons" src="../images/svg/footer_linkedin.svg" alt="LinkedIn"></li>
+            </ul>
+            <h4 class="text-center">© 2024 Note Hub</h4>
+        </div>
+    </footer>
+</body>
+</html>

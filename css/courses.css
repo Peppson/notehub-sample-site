@@ -1,0 +1,121 @@
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 8px;
+}
+
+.guitar-image {
+    position: absolute;
+    height: 700px;
+    width: 600px;
+    top: 16%;
+    transform: scale(0.8);
+    margin-left: -120px;
+    background-image: url('../images/band_solo.png');
+    background-repeat: no-repeat;
+}
+
+.course-table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+    padding-bottom: 220px;
+    background-color: var(--white); 
+}
+
+.course-table {
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.course-table th, 
+.course-table td {
+    padding: 12px;
+}
+
+.course-table th {
+    text-align: left;
+    width: 240px;
+    background-color: var(--darkgrey);
+    color: var(--white);
+}
+
+.course-table tr:nth-child(even) {
+    background-color: var(--table-color);
+}
+
+.course-table tr:hover, 
+.highlighted {
+    cursor: pointer;
+}
+
+.course-table tr:hover {
+    background-color: var(--lightgrey);    
+}
+
+.highlighted {
+    background: linear-gradient(140deg, rgba(122,17,23,0.7) 3%, rgba(255,199,78,0.7) 81%);
+}
+
+#course-page {
+    position: relative;
+    background-color: var(--lightgrey);
+    width: 100%;
+    margin-top: 1px;
+    padding-top: 40px;
+}
+
+#course-content {
+    width: 100%;
+}
+
+/* Hide background image */
+@media screen and (max-width: 1720px) {
+    .guitar-image {
+        display: none;
+    }
+}
+
+/* Toggle desktop/mobile table format */
+@media screen and (max-width: 540px) {
+    .course-table thead {
+        display: none;
+    }
+
+    table {
+        box-shadow: none;
+    }
+
+    .course-table th, 
+    .course-table td {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .course-table, 
+    .course-table tbody,
+    .course-table tr, 
+    .course-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .box {
+        display: flex;
+        height: 140px;
+        border-color: rgb(218, 218, 218);
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Insert text before the original td-text, some intense googling here... */
+    .course-table td:nth-child(1)::before { content: "Course: "; font-weight: bold; }
+    .course-table td:nth-child(2)::before { content: "Instructor: "; font-weight: bold; }
+    .course-table td:nth-child(3)::before { content: "Location: "; font-weight: bold; }
+    .course-table td:nth-child(4)::before { content: "Date: "; font-weight: bold; }
+}

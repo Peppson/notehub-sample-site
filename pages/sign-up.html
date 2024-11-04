@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/svg/logo.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <script src="../scripts/script.js"></script>
+    <title>Note Hub</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-align shadow">
+
+        <!-- Desktop -->
+        <div class="header-desktop">
+            <a class="logo-transition" href="../index.html">
+                <div class="header-align header-padding text-no-wrap">
+                    <img id="Logo-desktop" src="../images/svg/logo.svg" alt="Logo" class="logo">
+                    <h2>Note Hub</h2>
+                </div>
+            </a>
+            <nav class="text-no-wrap">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/courses.html">Courses</a></li>
+                    <li class="text-underline"><a href="../pages/sign-up.html">Sign up</a></li>
+                </ul>
+            </nav>
+            <ul class="header-padding header-icons">
+                <li><img src="../images/svg/header_search.svg" alt="Search"></li>
+                <li><img src="../images/svg/header_user.svg" alt="User"></li>
+                <li><img src="../images/svg/header_cart.svg" alt="Cart"></li>
+            </ul>
+        </div>
+
+        <!-- Mobile -->
+        <div class="header-mobile">
+            <a class="logo-transition" href="../index.html">
+                <div class="header-mobile-size">
+                    <img id="logo-mobile" src="../images/svg/logo.svg" alt="Logo" class="logo">
+                </div>
+            </a>
+            <h2 class="text-no-wrap header-mobile-size">Note Hub</h2>
+            <div class="header-mobile-size">
+                <img id="menu-button" src="../images/svg/menu_toggle.svg" alt="menu" onclick="toggleDropdown()">
+            </div>
+        </div>
+    </header>
+
+    <!-- Dropdown menu -->
+    <nav id="dropdown-menu" class="dropdown-menu-wrapper hidden">
+        <div class="dropdown-menu font-large">
+            <a href="../index.html">Home</a>
+            <a href="../pages/courses.html">Courses</a>
+            <a href="../pages/sign-up.html" class="text-underline">Sign up</a>
+            <a href="">Search</a>
+            <a href="">My Account</a>
+            <a href="">My Cart</a>
+        </div>
+    </nav>
+
+    <main id="sign-up-page">
+        <section>
+            <div>
+                <h2 class="text-center h2-padding">Sign Up and Start Learning!</h2>
+                <p class="text-center paragraph-padding">
+                    All courses start at 9 AM at various <span class="text-no-wrap">Note Hub™</span> locations.
+                </p>
+                <br>
+            </div>
+        </section>
+
+        <!-- Form -->
+        <section class="form-wrapper align-center background-image">
+            <div class="form shadow">
+                <div class="form-header align-center">
+                    <h2>Get Started</h2>
+                </div>
+                <br>
+                <div id="form-container" class="align-center">
+                    <form method="post" action="javascript:formSubmit()">
+                        <label for="browser-wrapper">Course<span>*</span></label>
+                        <input id="browser-wrapper" list="browsers" required>
+                        <datalist id="browsers">
+                            <option value="Drum Fills">
+                            <option value="Piano!">
+                            <option value="Digital Domain">
+                            <option value="Expert Guitar">
+                            <option value="Vocal Warmups">
+                            <option value="Flute Madness">
+                            <option value="Music Theory">
+                        </datalist>
+
+                        <label for="fname">Your Name<span>*</span></label>
+                        <input type="text" id="fname" name="fname" placeholder="First name" required>
+                        <input type="text" id="lname" name="lname" placeholder="Last name" required>
+
+                        <label for="email">Email Address<span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Email@email.com" required>
+
+                        <label for="phone">Phone Number<span>*</span></label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0701234567" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" cols="20" maxlength="100"></textarea>
+
+                        <div class="align-center">
+                            <input id="submit-button" type="submit" value="Submit" class="font-medium">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="header-align">
+        <div class="footer-align">
+            <ul>
+                <li><img class="footer-icons" src="../images/svg/footer_facebook.svg" alt="Facebook"></li>
+                <li><img class="footer-icons" src="../images/svg/footer_instagram.svg" alt="Instagram"></li>
+                <li><img class="footer-icons" src="../images/svg/footer_github.svg" alt="Github"></li>
+                <li><img class="footer-icons" src="../images/svg/footer_linkedin.svg" alt="LinkedIn"></li>
+            </ul>
+            <h4 class="text-center">© 2024 Note Hub</h4>
+        </div>
+    </footer>
+</body>
+
+</html>
