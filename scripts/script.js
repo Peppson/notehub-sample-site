@@ -9,18 +9,14 @@ function toggleDropdown() {
     }
 }
 
-function closeDropdown() {
-    const menu = document.getElementById("dropdown-menu");
-    menu.style.display = "none";
-}
-
 function formSubmit() {
-    alert("Success!");
+    alert("Success!"); // Massive functionality
 }
 
 // Close dropdown menu on window resize
 window.addEventListener('resize', () => {
     if (window.innerWidth > 740) {
-        closeDropdown();
+        const menu = document.getElementById("dropdown-menu");
+        menu.style.display = "none";
     }
 });
