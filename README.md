@@ -1,5 +1,3 @@
-# Note Hub (Mock Website)  
+# Note Hub (mock website) [![Live Demo](https://img.shields.io/badge/Live-Demo-green?logo=github)](https://peppson.github.io/notehub-sample-site/)  
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?logo=github)](https://peppson.github.io/notehub-sample-site/)
-
-<br>
+![homepage](./images/front-page.png) 
